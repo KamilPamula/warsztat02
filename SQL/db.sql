@@ -9,7 +9,7 @@ CREATE TABLE users(
 	username VARCHAR(255),
 	email VARCHAR(255) UNIQUE,
 	password VARCHAR(245),
-	user_gruop_id INT,
+	user_group_id INT,
 	PRIMARY KEY(id),
 	FOREIGN KEY (user_group_id) REFERENCES user_group(id)
 );
